@@ -1,0 +1,187 @@
+
+/*GLOBAL*/
+
+
+:root{
+    --pcolor : rgb(36, 28, 28);
+    --scolor: white;
+    --tcolor: rgb(155, 39, 39);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    text-align: center;
+}
+
+
+
+
+
+/*HEAD*/
+
+
+
+
+.app-header{
+    background: var(--tcolor);
+    padding: 1px;
+    box-shadow: 2px 6px 10px grey;
+}
+
+.h-container{
+    display:flex;
+    flex-direction: column;
+}
+
+.app-header h1{
+    align-self: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--scolor);
+    margin: 40px 5px 30px;
+    
+}
+
+
+.foot{
+    font-size:18px;
+    background: rgb(36, 33, 33);
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+.foot ul{
+   
+    display:flex;
+    justify-content: space-around;
+}
+
+.foot ul li{
+    list-style: none;
+}
+
+.foot ul li a{
+    color:var(--scolor);
+   text-decoration: none;
+}
+
+
+
+
+
+/*SUBHEAD*/
+
+
+input[type='text']{
+    border:1px grey solid;;
+    margin: 15px auto ;
+    padding: 10px;
+    width: 50vw;
+    box-shadow: 2px 1px 6px rgb(15, 11, 11);
+}
+
+
+.search{
+    margin: auto auto 15px 15px;
+    display:flex;
+    flex-direction: column;
+    padding:15px;
+}
+
+.b{
+    width: 20%;
+    box-shadow: 2px 1px 6px rgb(15, 11, 11);
+    background: var(--pcolor);
+    color: var(--scolor);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 2px auto ;
+
+}
+
+.b:hover{
+    background:rgb(85, 78, 78);
+    transition: 0.8s;
+    color: var(--scolor);
+}
+
+/*GRID*/
+
+.grid{
+    background:var(--scolor);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 0 10px;
+}
+
+.grid .items{
+border: 1px grey solid;
+padding: 30px;
+box-shadow: 1px 1px 5px rgb(15, 11, 11); 
+}
+
+.items h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--tcolor);
+}
+
+.items p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.fb{
+    width: 30%;
+}
+
+
+.deliver{
+    background: rgb(36, 33, 33);
+    width: 90%;
+    color: var(--scolor);
+    letter-spacing: 3px;
+    display: flex;
+    margin: 15px auto 16px auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 10vh;
+    box-shadow: 2px 2px 10px rgb(15, 11, 11);
+}
+
+.psh{
+    color:red;
+    font-family: roboto, 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.shimg{
+    position: relative;
+    width: 5vw;
+}
+
+img{
+    width: 10vw;
+}
+
+
+/*  FOOTER */
+
+footer{
+    margin: 30px;
+}
